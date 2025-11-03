@@ -1,62 +1,89 @@
-# Projeto ETL - Análise de Evasão de Clientes (Churn) da TelecomX
+# ETL Project - Customer Churn Analysis for TelecomX
 
-Este projeto tem como objetivo realizar um processo completo de **ETL (Extração, Transformação e Carga)** e análise exploratória dos dados de clientes da empresa fictícia **TelecomX**, visando identificar os principais fatores que contribuem para a evasão de clientes (churn) e propor recomendações estratégicas para retenção.
+This project aims to perform a complete **ETL (Extraction, Transformation, and Loading)** process and exploratory analysis of customer data from the fictitious company **TelecomX**, aiming to identify the main factors contributing to customer churn and propose strategic recommendations for retention.
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
-- **TelecomX_BR.ipynb**: Notebook principal contendo todo o fluxo de ETL, análise exploratória e relatório final.
-- **Outros arquivos**: Notebooks e datasets auxiliares para estudos e testes.
+- **TelecomX_BR.ipynb**: Main notebook containing the entire ETL flow, exploratory analysis, and final report.
 
-## 🚀 Como Executar
+- **Other files**: Auxiliary notebooks and datasets for studies and tests.
 
-1. **Pré-requisitos**  
-   Certifique-se de ter o Python 3.x instalado e as seguintes bibliotecas:
-   - pandas
-   - numpy
-   - matplotlib
-   - seaborn
-   - requests
+---
+See also: - [![Project Machine_Learning_Alura](https://img.shields.io/badge/github-Machine_Learning_Alura-blue)](https://github.com/CidQueiroz/Machine_Learning_Alura)
 
-   Instale as dependências com:
-   ```bash
-   pip install pandas numpy matplotlib seaborn requests
+---
 
-2. **Execução**
-    - Abra o arquivo TelecomX_BR.ipynb em um ambiente Jupyter Notebook (VS Code, JupyterLab, etc.) e execute as células sequencialmente.
+## 🚀 How to Run
 
-## 📊 Fluxo do Notebook TelecomX_BR.ipynb
-    **Extração**
+1. **Prerequisites**
 
-   - Os dados são extraídos de uma API pública (JSON hospedado no GitHub).
-   - Utiliza as bibliotecas requests e pandas para carregar os dados em um DataFrame.
+Make sure you have Python 3.x installed and the following libraries:
 
-    **Transformação**
+- pandas
 
-   - Padronização dos nomes das colunas.
-   - Remoção de linhas inconsistentes e tratamento de valores nulos.
-   - Conversão de colunas para tipos adequados e preenchimento de valores ausentes com a mediana ou moda.
+- numpy
 
-    **Carga e Análise**
+- matplotlib
 
-   - Análise exploratória dos dados (EDA) com visualizações usando matplotlib e seaborn.
-   - Geração de estatísticas descritivas, gráficos de distribuição, correlação e detecção de outliers.
+- seaborn
 
-    **Relatório Final**
+- requests
 
-   - Apresentação dos principais insights sobre o churn.
-   - Recomendações estratégicas para redução da evasão de clientes.
+Install the dependencies with:
 
-## 📈 Principais Insights
-   - Contratos mensais, uso de fibra óptica e pagamento via cheque eletrônico estão fortemente associados ao churn.
-   - Clientes com menor tempo de permanência e cobranças mensais mais altas têm maior risco de evasão.
+``bash
+pip install pandas numpy matplotlib seaborn requests
 
-## 📝 Recomendações
-   - Incentivar migração para contratos mais longos.
-   - Investigar a satisfação dos clientes de fibra óptica.
-   - Otimizar métodos de pagamento, promovendo opções automáticas.
-   - Monitorar clientes novos e com cobranças elevadas para ações proativas de retenção.
+2. **Run**
 
-## 📚 Referências
-   - Desafio Data Science - Alura
-   - Documentação das bibliotecas: pandas, matplotlib, seaborn
-   - Projeto desenvolvido para fins educacionais no contexto do curso de Data Science e Inteligência Artificial. ```
+- Open the TelecomX_BR.ipynb file in a Jupyter Notebook environment (VS Code, JupyterLab, etc.) and run the cells sequentially.
+
+## 📊 TelecomX_BR Notebook Flowchart
+
+**Extraction**
+
+- Data is extracted from a public API (JSON hosted on GitHub).
+
+- Uses the requests and pandas libraries to load the data into a DataFrame.
+
+**Transformation**
+
+- Standardization of column names.
+
+- Removal of inconsistent rows and handling of null values.
+
+- Conversion of columns to appropriate types and filling in missing values ​​with the median or mode.
+
+**Loading and Analysis**
+
+- Exploratory data analysis (EDA) with visualizations using matplotlib and seaborn.
+
+- Generation of descriptive statistics, distribution graphs, correlation, and outlier detection.
+
+**Final Report**
+
+- Presentation of key insights on churn.
+
+- Strategic recommendations for reducing customer churn.
+
+## 📈 Key Insights
+
+- Monthly contracts, fiber optic usage, and electronic check payments are strongly associated with churn.
+
+- Customers with shorter contract lengths and higher monthly charges have a greater risk of churn.
+
+## 📝 Recommendations
+
+- Encourage migration to longer contracts.
+
+- Investigate fiber optic customer satisfaction.
+
+- Optimize payment methods, promoting automated options.
+
+- Monitor new customers and those with high charges for proactive retention actions.
+
+## 📚 References
+
+- Data Science Challenge - Alura
+- Documentation of the libraries: pandas, matplotlib, seaborn
+- Project developed for educational purposes in the context of the Data Science and Artificial Intelligence course.
